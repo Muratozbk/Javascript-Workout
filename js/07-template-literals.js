@@ -18,3 +18,4 @@ günün saat bilgisi : ${new Date().getHours()}:${new Date().getMinutes()}
 `
 
 console.log(info)
+
