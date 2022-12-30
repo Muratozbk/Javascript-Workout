@@ -32,3 +32,21 @@ console.log(
 )
 
 // Bilgiyi Değiştir -> replace :
+ email = email.replace("gmail.com", "kodluyoruz.org")
+ console.log(email)
+
+ //İstediğin Bilgi var mı?
+ email.includes("dfhskfh") // false
+ email.includes("@") // true
+
+ // İStediğim bilgi ile başladı mı? Bitti mi?
+ console.log (
+    email.endsWith("kodluyoruz.org")
+ )
+
+ // İlk harflerini Büyük Yapmak :
+ firstName = "FIRST"
+ lastName = "lastname"
+ let fullName = `${firstName[0].toUpperCase()}${firstName.slice(1).toLowerCase()} ${lastName[0].toUpperCase()}${lastName.slice(1).toLowerCase()}`
+
+ console.log(fullName)
