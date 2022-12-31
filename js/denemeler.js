@@ -1,62 +1,65 @@
-let fullName ="murat ozbek"
-console.log(fullName + " test")
+// console.log(document.body)
+// console.log(document.URL)
+// console.log(document.location)
+// console.log(document.location.host)
 
-fullName = fullName + "  yeni eklenen bilgi"
-console.log(fullName)
+// document.body.style.backgroundColor = "rgb(222, 216, 123)"
 
-fullName += " ve yeni bilgi eklendi"
-console.log(fullName)
+// let link = document.querySelector("ul#list>li")
+// console.log(link)
+// console.log(link.innerHTML)
 
-let price = 100
-let tax = 0.18
-let priceTax = price * tax
-console.log("kdv", priceTax)
+// let list = document.getElementById("list")
+// console.log(list)
+// list.innerHTML = "yeni bilgi"
+// console.log(list.innerHTML)
 
-let stringNumber = "11"
-console.log(stringNumber)
-let newNumber = Number(stringNumber)
-console.log(newNumber)
+// let link = document.querySelector("ul#list>li")
+// console.log(link.innerHTML)
+// link.innerHTML += " 1.ilave"
+// console.log(link.innerHTML)
+// link.style.color = "orange"
 
-let counter = 250
-counter+= 2;
-counter ++
-counter-= 1
-counter *=2
-counter /= 2
-console.log(counter)
-console.log(15%4)
-console.log(2**3)
-console.log(Math.floor(4.7))
-console.log(Math.ceil(4.2))
-console.log(Math.round(4.5))
+// let fullName = prompt("isim gir")
+// let list = document.querySelector("#list")
+// list.innerHTML = `${list.innerHTML}  <small style="color:blue"> ${fullName} </small>`
 
-let isActive = false // 0
-isActive = true // 1
-console.log(isActive)
 
-let userName;
-let isUserName = Boolean("userName")
-console.log(isUserName)
+// let ulDOM =document.querySelector("ul#list")
+// let liDOM = document.createElement("li")
+// liDOM.innerHTML = "yeni oluşan öge"
+// ulDOM.append(liDOM)
 
-userName = "-0.1"
-console.log("User Name:",Boolean(userName))
-console.log(Boolean(userName, length > 47))
+// let liDOM2 = document.createElement("li")
+// liDOM2.innerHTML = "prependli öge"
+// ulDOM.prepend(liDOM2)
 
-let hasPassword = true
-console.log(typeof(price))
-console.log(typeof(hasPassword))
-console.log(typeof(stringNumber))
-userName = parseInt(userName)
-console.log(typeof(userName))
+let lastChild = document.querySelector("ul#list>li:last-child")
+lastChild.innerHTML = "son öge değiş"
+console.log(lastChild)
 
-let number1 = 12
-number1 = number1.toString()
-console.log(typeof(number1))
+let firstChild = document.querySelector("ul#list>li:first-child")
+firstChild.innerHTML = "ilk öge degis"
+console.log(firstChild)
 
-let admin = "murat"
-let email = "user@gmail.com"
-let info = `admin :${admin}
-mail adresi :${email}
-mail uzunlugu : ${email.length}
-`
-console.log(info)
+let ulDOM = document.querySelector("ul#list")
+let liDOM = document.createElement("li")
+liDOM.innerHTML = "yeni satır 1 append"
+ulDOM.append(liDOM)
+
+let liDOM2 = document.createElement("li")
+liDOM2.innerHTML = "yeni 2 prepend"
+ulDOM.prepend(liDOM2)
+
+
+
+
+
+
+
+
+
+
+
+
+
