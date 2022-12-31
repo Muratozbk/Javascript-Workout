@@ -38,6 +38,25 @@ let userName;
 let isUserName = Boolean("userName")
 console.log(isUserName)
 
-userName = -0.1
+userName = "-0.1"
 console.log("User Name:",Boolean(userName))
 console.log(Boolean(userName, length > 47))
+
+let hasPassword = true
+console.log(typeof(price))
+console.log(typeof(hasPassword))
+console.log(typeof(stringNumber))
+userName = parseInt(userName)
+console.log(typeof(userName))
+
+let number1 = 12
+number1 = number1.toString()
+console.log(typeof(number1))
+
+let admin = "murat"
+let email = "user@gmail.com"
+let info = `admin :${admin}
+mail adresi :${email}
+mail uzunlugu : ${email.length}
+`
+console.log(info)
