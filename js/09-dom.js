@@ -25,5 +25,5 @@ console.log(link.innerHTML)
 
 link.innerHTML += " Değişti"
 
-link.style.color = "red"
+link.style.color = "orange"
  //link.classList.add("btn")
