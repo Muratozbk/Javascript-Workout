@@ -10,7 +10,7 @@ let info = document.querySelector("#info")
 // kosul ? dogruysa : yanlışsa
 //username.length > 0 ? username :"bulunamadı :(
 
-info.innerHTML = `${username ? username :"bulunamadı :("}` 
+info.innerHTML = `${username.length > 0 ? username :"bulunamadı :("}` 
 
 
 
