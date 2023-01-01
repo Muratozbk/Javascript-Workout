@@ -23,13 +23,14 @@ let info = document.querySelector("#info")
 // } else if (!username) {console.log("isim gir")
 // } else if (!(age >= 18)) {console.log("yaş gir")}
 
-if (username && age >= 18 ) { info.innerHTML = ("passed")
-} else if (!username) {info.innerHTML = ("isim gir")
-} else if (!(age >= 18)) {info.innerHTML = ("yaş gir")}
+// if (username && age >= 18 ) { info.innerHTML = ("passed")
+// } else if (!username) {info.innerHTML = ("isim gir")
+// } else if (!(age >= 18)) {info.innerHTML = ("yaş gir")}
 
 
-
-
+if (username && age >= 18) {info.innerHTML =("geçti")} else if (!username) {
+    info.innerHTML = ("isim yaz")
+} else if (!(age >= 18)){info.innerHTML = ("kremyap")}
 
 
 
