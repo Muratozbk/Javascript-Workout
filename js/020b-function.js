@@ -19,21 +19,21 @@ yada hiç almayabilir.
  console.log(firstName) // değişken  
  greetings()  // fonksiyona parametre göndermedik
  greetings("parametre")
+console.log("-----")
 
- function greetings2 (firstName, lastName) {
-   let info = `merhaba ${firstName} ${lastName}`
-   return  info
- }
+function greetings2(firstName, lastName) {
+  let info =`Merhaba ${firstName} ${lastName}`
+  return info
+} 
+let greetingsInfo  = greetings2("ad","soyad")
+console.log(greetingsInfo)
 
- let greetingsinfo = greetings2("ad","soyad")
- console.log(greetingsinfo)
+console.log("-----")
 
- function domIdWriteInfo(id, info){
-   let domObject = document.querySelector(`#${id}`)
-   domObject.innerHTML = info
- }
-let htmlInfo = ` <span style="color:red"> Color REDDDD </span> `
+function domIdWriteInfo(id, info) {
+  let domObject = document.querySelector(`#${id}`)
+  domObject.innerHTML = info
+}
+let htmlInfo = `<span style="color:green">Color Greeen</span>`
 
- domIdWriteInfo('greeting', htmlInfo)
- domIdWriteInfo('info', greetings2("ad" , "soyad" ))
-
+domIdWriteInfo("info",htmlInfo)
