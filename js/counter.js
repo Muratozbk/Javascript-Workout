@@ -1,5 +1,4 @@
 
-
 let counter = Number(localStorage.getItem("counter"))
 let counterDOM = document.querySelector("#counter")
 let increaseDOM = document.querySelector("#increase")
