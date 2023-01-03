@@ -1,6 +1,6 @@
 // DOM etiketleriyle çalışmak
 
-let greeting = document.querySelector("#greeting")
+/*let greeting = document.querySelector("#greeting")
 greeting.addEventListener("click", domClick)
 
 function domClick(){
@@ -16,3 +16,9 @@ function domClick(){
       console.log("degisti")    
       this.style.color == "green" ? this.style.color = "black" : this.style.color ="green"
 } */
+
+let greeting = document.querySelector("#greeting")
+greeting.addEventListener("click", domClick)
+function domClick(){
+      this.style.color=="green" ? this.style.color = "black" : this.style.color= "green"
+}
