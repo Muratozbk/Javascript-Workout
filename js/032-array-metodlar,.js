@@ -14,7 +14,7 @@ items.push(maleUsers)
 console.log(items)
 console.log(items.length)
 console.log(items[0][0]) // Ayşe bilgisine ulaştık
-console.log(items[0].length)
+console.log("items[0].length", items[0].length)
 
 //Array içerisindeki ögeleri ayırmak -> splice(pos, item?)
 let newItems = items.splice(1, 5)
@@ -53,6 +53,9 @@ console.log(allUsers.join(" --- "))
 
 //İstediğiimiz index bilgisine göre öge eklemek -> splice(index, 0, value)
 allUsers.splice(allUsers.length -1, 0, "Melissa")
-console.log(allUsers)
+console.log("melisa eklendi",allUsers)
 allUsers.splice (Math.floor(allUsers.length /2), 0, "Liza")
 console.log(allUsers)
+console.log(allUsers.indexOf("Liza"))
+
+document.body.style.backgroundColor="darkgray"
