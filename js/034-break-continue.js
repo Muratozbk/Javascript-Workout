@@ -17,9 +17,10 @@ let counter = 0
 //     console.log(counter)     
 // }
 
-const UL_DOM = document.querySelector("#userList")
+ const UL_DOM = document.querySelector("#userList")
 
-let index = 0;
+ let index = 0;
+
 
 // for (; index < LOREM_LIST.length; index++ ) {
 //     if (LOREM_LIST[index] == "dolor"){break} 
@@ -28,9 +29,18 @@ let index = 0;
 //     UL_DOM.append(LI_DOM)
 // }
 
-for (; index < LOREM_LIST.length; index++ ) {
+ for (; index < LOREM_LIST.length; index++ ) {
     if (LOREM_LIST[index] == "dolor"){continue} 
     let LI_DOM =document.createElement("li")
     LI_DOM.innerHTML=LOREM_LIST[index]
     UL_DOM.append(LI_DOM)
-}
+} 
+
+
+// let users =["lorem", "Ipsum", "Dolor"]
+// const userListDOM = document.querySelector("#userList")
+// for (index=0; index < users.length; index++) {
+//     const liDOM = document.createElement("li")
+//     liDOM.innerHTML= users[index]
+//     userListDOM.append(liDOM)
+// }
