@@ -15,7 +15,16 @@ let users =["lorem", "Ipsum", "Dolor"]
 //     console.log(index)
 // }
 
+const userListDOM = document.querySelector("#userList")
 
 for (index = 0; index < users.length; index++) {
+    const liDOM =document.createElement("li")
+    liDOM.innerHTML = users[index]
     console.log(users[index])
+    userListDOM.appendChild(liDOM)
 }
+
+for (let step = 0; step < 5; step++) {
+    // Runs 5 times, with values of step 0 through 4.
+    console.log('Walking east one step');
+  }
