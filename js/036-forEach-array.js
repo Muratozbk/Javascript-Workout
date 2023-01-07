@@ -6,7 +6,7 @@ const PRODUCTS = ["laptop", "Phone", "Speaker", "Desktop Pc","Server",
 // PRODUCTS.forEach((product, index, array)=> array[index] =
 //     product + " 111")
 PRODUCTS.forEach((product, index, array)=> array[index] =
- `${product.toUpperCase()}`   )
+ product.toUpperCase()   )
 
     console.log(PRODUCTS)
 

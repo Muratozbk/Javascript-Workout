@@ -1,43 +1,50 @@
 
-/*
-let counter = Number(localStorage.getItem("counter"))
-let counterDOM = document.querySelector("#counter")
-let increaseDOM = document.querySelector("#increase")
-let decreaseDOM = document.querySelector("#decrease")
 
+//   const LOREM_LIST = [
+//     'lorem', 'ipsum', 'dolor', 'amet', 'consector', 'adispice', 
+//     'elit'
+// ]
 
-increaseDOM.addEventListener("click", clickEvent)
-decreaseDOM.addEventListener("click", clickEvent)
+// let counter= 0
+// while ( counter< 10) {
+//     console.log(counter)
+//     counter ++
+// }
 
-function clickEvent (){
-    console.log(this.id)
-    this.id == "increase" ? counter += 1 : counter -= 1
-    localStorage.setItem("counter", counter)
-    counterDOM.innerHTML = counter
-}
-counterDOM.innerHTML = counter
+// let userName= "";
+// while (!userName){
+//     userName= prompt("isim yaz")
+// }
 
-let infoDom = document.querySelector("#info")
-infoDom.innerHTML = Number(localStorage.getItem("counter"))
-*/
+// let ip ="";
+// while (! (ip<100 && ip> 0)){
+//     ip = prompt("ip yaz")
+// }
 
-let userFormDOM = document.querySelector("#userForm")
-userFormDOM.addEventListener('submit', formHandler)
+// for(; counter<10 ; counter ++){
+//     if (counter==5){continue}
+//     console.log(counter)
+// }
 
-function formHandler(event) {
-    event.preventDefault()
-    const USER_NAME = document.querySelector("#userName")
-    const SCORE = document.querySelector("#score")
-    if (USER_NAME.value && SCORE.value) {
-    addItem(USER_NAME.value, SCORE.value)}
-}
+// const UL_DOM=document.querySelector("#userList")
+// let index = 0
+// for(;index< LOREM_LIST.length; index++){
+//     if(LOREM_LIST[index] == "dolor") {break}
+//     const LI_DOM =document.createElement("li")
+//     LI_DOM.innerHTML=(LOREM_LIST[index])
+//     UL_DOM.append(LI_DOM)
+// }
 
-let userListDOM = document.querySelector("#userList")
+const PRODUCTS = ["laptop", "Phone", "Speaker", "Desktop Pc","Server",
+"Mouse", "Keyboard"]
 
-const addItem = (userName, score) => {
+PRODUCTS.forEach((product, index, array)=> array[index] =
+     product + " 111")
 
-    let liDOM = document.createElement('li')    
-    liDOM.innerHTML = `${userName}${score} `
-    liDOM.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center')
-    userListDOM.append(liDOM)
-}
+// PRODUCTS.forEach((product, index, array)=> array[index] =
+//  `${product.toUpperCase()}`   )
+
+PRODUCTS.forEach((product, index, array) => array[index] =
+product.toUpperCase())
+
+    console.log(PRODUCTS)
