@@ -1,5 +1,5 @@
 // hata yönetimi için try catch kullanımı:
-let products;
+ let products;
 
 try {
     products.forEach(item => console.log(item) );
@@ -13,4 +13,4 @@ try {
 console.log("hata yönetimi düzgün çalışıyor")
 
 let info = "kodluyoruz"
-console.log(info)
+console.log(info) 
