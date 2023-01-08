@@ -11,7 +11,7 @@ let user1 = {
 };
 console.log(user1)
 
-// 042-Object ve Array Destructuring Nasil Kullanılır:
+//*** 042-Object ve Array Destructuring Nasil Kullanılır:***
 // Object Destructuring:
 
 let settings = {
@@ -37,4 +37,24 @@ let {userName:userName2, password:password2, isActive:isActive2,
 console.log("newSettings",userName2,password2,isActive2,
      newSettings)
 
-     
+//**** Objenin destructuring ile kopyalanması  *******
+
+// let settings2 = settings     hatalı yapı!!!!
+// settings2.userName = "Degisen Bilgi"
+// console.log("set1",settings)
+// console.log("set2",settings2) !!!!!
+
+let settings2 = {...settings}   //Dogrusu!!!
+settings2.userName = "Degisen Bilgi"
+ console.log("set1",settings)
+ console.log("set2",settings2)
+
+ let score = [100, 200, 300, 400]
+ let [score1, score2, ...otherScore] = score ;
+ console.log(score1, score2, otherScore)
+
+ //object kopyalama ile aynı... let setting2= {...settings}
+ let copyofScore =[...score] 
+ console.log(copyofScore)
+ copyofScore[0] = 5
+ console.log(copyofScore)
